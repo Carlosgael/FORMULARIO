@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Inicio de Sesión</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 80px 0 30px;
+        }
+
+        .btn-login {
+            width: 100%;
+        }
+
+        .form-wrapper {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
     <main class="container">
-        <h1 class="text center">mi primer formulario</h1>
-        <section>
+        <h1 class="form-title">Iniciar sesión en Facebook</h1>
+        <div class="form-wrapper">
             <form>
-            <section class="row">
-                <div class="col-6 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">nombre</label>
-                    <input type="email" class="form-control" id="nombre"
-                    placeholder="nombre">
-                    </div>
-                <div class="col-6 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                    <input type="email" class="form-control" id="apellido" placeholder="apellido" aria-describedby="emailHelp">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico o número de teléfono</label>
+                    <input type="email" class="form-control" id="email" placeholder="Introduce tu correo o número">
+                </div>
 
-                    <div class="col-8 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">contraseña</label>
-                    <input type="email" class="form-control" id="contraseña" placeholder="cotraseña" aria-describedby="emailHelp">
-                <button type="reset" class="btn btn-primary">reset</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="Introduce tu contraseña">
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-login">Iniciar sesión</button>
+                </div>
             </form>
-        </section>
+        </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
